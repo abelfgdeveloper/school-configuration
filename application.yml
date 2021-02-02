@@ -3,6 +3,19 @@ server:
   
   
 spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/${es.abelfgdeveloper.datasource.database}?currentSchema=${es.abelfgdeveloper.datasource.schema}
+    username: ${es.abelfgdeveloper.datasource.username}
+    password: ${es.abelfgdeveloper.datasource.password}
+  jpa:
+    open-in-view: true
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    
+    
   cloud:
     loadbalancer:
       ribbon:
