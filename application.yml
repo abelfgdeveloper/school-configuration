@@ -28,3 +28,8 @@ logging:
     root: warn
     '[es.abelfgdeveloper]': info
     '[org.zalando.logbook]': trace
+    
+    
+logbook:
+  exclude:
+    - /actuator/**
