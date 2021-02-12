@@ -1,7 +1,12 @@
 server:
   port: ${PORT:0}
   
-  
+es:
+  abelfgdeveloper:
+    service:
+      school:
+        students: school-students-service
+        
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
