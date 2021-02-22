@@ -1,0 +1,7 @@
+es:
+  abelfgdeveloper:
+    datasource:
+      database: ${es.abelfgdeveloper.database.school.name}
+      schema: exams
+      username: ${es.abelfgdeveloper.database.school.username}
+      password: ${es.abelfgdeveloper.database.school.password}
